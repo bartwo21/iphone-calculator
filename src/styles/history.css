@@ -1,0 +1,94 @@
+@import "./variables.css";
+
+.history-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--history-modal-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.history-content {
+  background-color: var(--history-content-bg);
+  border-radius: 20px;
+  padding: 20px;
+  width: 300px;
+  max-height: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.dark .history-content {
+  background-color: var(--dark-history-modal-bg);
+  color: var(--history-modal-font-color);
+}
+
+.history-close {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: right;
+  margin-bottom: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: inherit;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #37373775;
+}
+
+.history-actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.history-items {
+  overflow-y: auto;
+  flex: 1;
+}
+
+.history-content p {
+  color: var(--history-modal-p-color);
+}
+
+h2 {
+  margin: 0;
+}
+
+.history-item {
+  padding: 5px 0;
+  display: flex;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: var(--history-modal-close-button-color);
+  border: 1px solid #37373775;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.clear-history-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  color: var(--clear-history-button-color);
+  border: 1px solid #37373775;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.dark .close-button,
+.dark .clear-history-button {
+  color: var(--dark-clear-history-button-color);
+}

@@ -1,0 +1,108 @@
+@import "./variables.css";
+
+.calculator-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+.calculator {
+  position: relative;
+  width: var(--calculator-width);
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 0px -5px 70px rgba(0, 0, 0, 0.1);
+  background: var(--calculator-bg);
+}
+
+.calculator.dark {
+  background: linear-gradient(
+    166.34deg,
+    #373737 0%,
+    #252628 22.9%,
+    #000309 100%
+  );
+  color: var(--calculatir-text-color);
+  box-shadow: 0px -5px 70px rgba(0, 0, 0, 0.4);
+}
+
+.top-buttons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px 90px 20px;
+}
+
+.themes {
+  display: flex;
+  background-color: var(--themes-bg);
+  border-radius: var(--border-radius);
+}
+
+.dark .themes {
+  background-color: var(--dark-themes-bg);
+}
+
+.calculator-grid {
+  position: relative;
+  padding: 30px 30px 45px 30px;
+  border-radius: 30px;
+  overflow: hidden;
+  z-index: 1;
+  box-shadow: 0px -5px 70px 0px #0000001a;
+}
+
+.calculator-grid::before {
+  content: "";
+  position: absolute;
+  width: 1377px;
+  height: 1562px;
+  left: -140px;
+  top: -60px;
+  background: linear-gradient(
+    246.38deg,
+    #48b1d1 22.14%,
+    #008cff 21.9%,
+    #92d3ff 42.94%,
+    #d6e4ff 74.11%
+  );
+  filter: blur(222px);
+  transform: rotate(-10deg);
+  z-index: -1;
+}
+
+.dark .calculator-grid::before {
+  background: linear-gradient(
+    244.38deg,
+    #42869b 8.14%,
+    #2a7da1 27.9%,
+    #153668 56.94%,
+    #000000 84.11%
+  );
+}
+
+.calculator-layout {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto auto auto auto;
+  gap: 20px;
+}
+
+.calculator::after {
+  content: "";
+  position: absolute;
+  width: 175px;
+  height: 5px;
+  left: 50%;
+  bottom: 15px;
+  transform: translateX(-50%);
+  background: var(--calculator-after-bg);
+  border-radius: 25px;
+  z-index: 1;
+}
+
+.dark .calculator::after {
+  background: var(--dark-calculator-after-bg);
+}

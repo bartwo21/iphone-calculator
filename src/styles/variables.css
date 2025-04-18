@@ -1,0 +1,54 @@
+:root {
+  --light-display-bg: #fff;
+  --light-button-bg: #cfecff70;
+  --light-operator-bg: #c4e1ff;
+
+  --dark-button-bg: #0505054d;
+  --dark-operator-bg: #0f4c81;
+
+  --button-text-light: #333;
+  --button-text-dark: #fff;
+
+  --dark-theme-active: #003661;
+  --dark-theme-inactive: rgba(255, 255, 255, 0.2);
+
+  --button-size: 70px;
+  --small-button-size: 45px;
+  --border-radius: 40px;
+  --calculator-width: 423px;
+
+  --body-bg: #f9f9f9;
+
+  --toggle-button-active: #d8eeff;
+  --dark-toggle-button: white;
+  --toggle-button-svg-fill: #37373766;
+  --dark-toggle-button-svg-fill: #fbfbfb66;
+  --toggle-button-svg-fill-active: #000000a6;
+  --dark-toggle-button-svg-fill-active: rgba(255, 255, 255, 0.726);
+
+  --dark-history-button-svg-fill: #fbfbfb;
+
+  --expression-color: #666;
+  --dark-expression-color: #aaa;
+
+  --result-color: #373737;
+  --dark-result-color: #fbfbfb;
+
+  --history-modal-bg: rgba(0, 0, 0, 0.5);
+  --history-content-bg: white;
+  --dark-history-modal-bg: #212121;
+  --history-modal-font-color: white;
+  --history-modal-p-color: #373737b7;
+  --history-modal-close-button-color: #666;
+  --clear-history-button-color: #666;
+  --dark-clear-history-button-color: #fff;
+
+  --calculator-bg: white;
+  --calculatir-text-color: white;
+
+  --themes-bg: #a9dcfd;
+  --dark-themes-bg: #1b6a9c;
+
+  --calculator-after-bg: #6396c5;
+  --dark-calculator-after-bg: #3a6b98;
+}
