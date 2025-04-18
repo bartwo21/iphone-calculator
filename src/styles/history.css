@@ -51,6 +51,7 @@
 .history-items {
   overflow-y: auto;
   flex: 1;
+  color: var(--history-modal-p-color);
 }
 
 h2 {
