@@ -208,6 +208,8 @@ const useCalculator = () => {
     lastOperator,
     handleButtonClick,
     clearHistory,
+    setLastNumber,
+    setExpression,
   };
 };
 

@@ -4,7 +4,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
   padding: 20px;
 }
 
@@ -105,4 +105,19 @@
 
 .dark .calculator::after {
   background: var(--dark-calculator-after-bg);
+}
+
+@media (max-width: 768px) {
+  .top-buttons-container {
+    padding: 40px 20px 50px 20px;
+  }
+  .calculator-layout {
+    gap: 5px;
+  }
+  .calculator-layout .number-buttons-container {
+    gap: 5px;
+  }
+  .calculator-grid {
+    padding: 20px 20px 30px 20px;
+  }
 }

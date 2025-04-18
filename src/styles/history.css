@@ -53,10 +53,6 @@
   flex: 1;
 }
 
-.history-content p {
-  color: var(--history-modal-p-color);
-}
-
 h2 {
   margin: 0;
 }
@@ -64,6 +60,7 @@ h2 {
 .history-item {
   padding: 5px 0;
   display: flex;
+  color: var(--history-modal-p-color);
 }
 
 .close-button {

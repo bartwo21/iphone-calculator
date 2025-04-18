@@ -14,9 +14,7 @@ const formatNumber = (num) => {
     }
   }
 
-  const parts = str.split(".");
-  parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-  return parts.length > 1 ? parts.join(".") : parts[0];
+  return str;
 };
 
 const parseFormattedNumber = (str) => {

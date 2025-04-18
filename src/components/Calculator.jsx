@@ -68,8 +68,7 @@ const Calculator = () => {
         if (button) handleButtonClick(button);
       } else if (key === "Backspace") {
         if (lastNumber) {
-          const newLastNumber = lastNumber.slice(0, -1);
-          setLastNumber(newLastNumber);
+          setLastNumber(lastNumber.slice(0, -1));
           setExpression(expression.slice(0, -1));
         }
       }

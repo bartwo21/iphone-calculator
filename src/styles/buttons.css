@@ -162,3 +162,31 @@
   grid-row: 2 / span 3;
   gap: 20px;
 }
+
+@media (max-width: 768px) {
+  .number-buttons-container {
+    place-items: center;
+  }
+  .calc-button {
+    height: calc(var(--button-size) * 0.9);
+    width: calc(var(--button-size) * 0.9);
+    font-size: 22px;
+  }
+  .function-buttons-container {
+    gap: 35px;
+  }
+  .operator-buttons-container {
+    width: calc(var(--button-size) * 0.8);
+    margin-left: auto;
+    margin-right: 10px;
+  }
+  .function-buttons-container .calc-button.function {
+    height: calc(var(--small-button-size) * 0.8);
+  }
+  .operator-buttons-container .calc-button.operator {
+    height: calc(var(--button-size) * 0.8);
+  }
+  .operator-buttons-container .calc-button.operator:last-child {
+    height: calc(var(--button-size) * 0.8) !important;
+  }
+}
