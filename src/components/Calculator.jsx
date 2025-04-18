@@ -88,11 +88,7 @@ const Calculator = () => {
         setIsHistoryOpen={setIsHistoryOpen}
       />
 
-      <DisplayResult
-        expression={expression}
-        result={result}
-        isDarkMode={isDarkMode}
-      />
+      <DisplayResult expression={expression} result={result} />
 
       <CalculatorButtons
         handleButtonClick={handleButtonClick}

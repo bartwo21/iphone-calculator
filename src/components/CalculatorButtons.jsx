@@ -1,5 +1,4 @@
 import React from "react";
-import { BUTTONS } from "../constants/buttonTypes";
 import Button from "./Button";
 
 const CalculatorButtons = ({

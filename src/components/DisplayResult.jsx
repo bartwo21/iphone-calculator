@@ -1,9 +1,9 @@
 import React from "react";
 import "../styles/base.css";
 
-const DisplayResult = ({ expression, result, isDarkMode }) => {
+const DisplayResult = ({ expression, result }) => {
   return (
-    <div className={`display ${isDarkMode ? "dark" : ""}`}>
+    <div className="display">
       <div className="expression-container">
         <div className="expression">{expression}</div>
       </div>
