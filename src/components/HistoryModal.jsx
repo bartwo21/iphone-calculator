@@ -16,7 +16,7 @@ const HistoryModal = ({ isOpen, onClose, history = [], onClearHistory }) => {
     <div className="history-modal" onClick={handleOverlayClick}>
       <div className="history-content" onClick={(e) => e.stopPropagation()}>
         <div className="history-close">
-          <h2>History</h2>
+          <h2>Geçmiş</h2>
           <div className="history-actions">
             <button className="clear-history-button" onClick={onClearHistory}>
               Temizle
